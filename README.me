@@ -1,0 +1,17 @@
+
+```python
+class Customer:
+    def __init__(self, name, address, meter_id):
+        self.name = name
+        self.address = address
+        self.meter_id = meter_id
+        self.usage = 0
+
+    def record_usage(self, units):
+        self.usage += units
+
+    def generate_bill(self):
+        # Calculate bill based on usage and other factors
+        bill_amount = self.usage * 0.10
+        return bill_amount
+``` 
